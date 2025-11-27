@@ -29,6 +29,9 @@ const Header = () => {
           <a href="#gifts" onClick={(e) => handleScroll(e, "gifts")} className="hover:text-[#f1b42f] transition">GIFT</a>
           <a href="#rsvp" onClick={(e) => handleScroll(e, "rsvp")} className="hover:text-[#f1b42f] transition">RSVP</a>
           <a href="#gallery" onClick={(e) => handleScroll(e, "gallery")} className="hover:text-[#f1b42f] transition">GALLERY</a>
+
+          {/* SHARE BUTTON (TEXT VARIANT) */}
+          <ShareButton variant="text" />
         </nav>
 
         {/* Desktop Gift Button */}
@@ -67,7 +70,7 @@ const Header = () => {
           </a>
 
           <ShareButton />
-          
+
         </div>
       )}
     </header>

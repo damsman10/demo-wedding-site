@@ -35,7 +35,9 @@ const HeaderPage = () => {
             GALLERY
           </Link>
           
-          <shareButton />
+          {/* SHARE BUTTON (TEXT VARIANT) */}
+          <ShareButton variant="text" />
+          
         </nav>
 
         {/* Confirm Button */}

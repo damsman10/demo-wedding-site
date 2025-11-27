@@ -1,4 +1,4 @@
-const ShareButton = () => {
+const ShareButton = ({ variant = "button" }) => {
   const handleShare = () => {
     const shareData = {
       title: "Jane & John's Wedding",
@@ -14,6 +14,19 @@ const ShareButton = () => {
     }
   };
 
+  // TEXT VERSION (for desktop nav)
+  if (variant === "text") {
+    return (
+      <span
+        onClick={handleShare}
+        className="cursor-pointer hover:text-[#f1b42f] transition"
+      >
+        SEND INVITE
+      </span>
+    );
+  }
+
+  // DEFAULT BUTTON VERSION (footer / mobile)
   return (
     <div className="flex justify-center">
       <button

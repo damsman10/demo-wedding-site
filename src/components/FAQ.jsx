@@ -2,26 +2,47 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "Where will the wedding take place?",
-    answer: "The ceremony and reception will be at Rosewood Gardens, Lagos. Directions will be provided upon RSVP.",
+    question: "When is the wedding ceremony and reception?",
+    answer:
+      "The wedding ceremony and reception will take place on Saturday, March 7th, 2026 at 1:00 PM."
   },
   {
-    question: "What is the dress code?",
-    answer: "We encourage semi-formal attire with a touch of gold if you wish!",
+    question: "Where is the venue?",
+    answer:
+      "The event will be held at Pleasant Event Center, 1 Obanta Avenue, Off Ajao Road (Adeniyi Jones), Ikeja, Lagos."
   },
   {
-    question: "Is there parking available?",
-    answer: "Yes, the venue has ample parking space for guests.",
+    question: "What are the colours of the day?",
+    answer:
+      "The colours of the day are Olive Green and Touch of Gold."
   },
   {
-    question: "Can I bring a plus one?",
-    answer: "Please indicate in your RSVP if you will be bringing a guest.",
+    question: "Is the event strictly by invitation?",
+    answer:
+      "Yes, attendance is strictly by invitation. Please come with your access card."
   },
   {
-    question: "Are children allowed?",
-    answer: "We love little ones, but the event is primarily adult-focused.",
+    question: "Do I need an access card to enter?",
+    answer:
+      "Yes, guests are required to present the access card at the reception for entry."
   },
+  {
+    question: "Who can I contact if I have questions or need help finding the venue?",
+    answer:
+      "For inquiries or assistance on the wedding day, you can reach out to Jesutofunmi Oguntoye at 08168965522."
+  },
+  {
+    question: "What time should guests arrive?",
+    answer:
+      "The program starts at 1:00 PM, so guests are encouraged to arrive a bit earlier to be seated comfortably."
+  },
+  {
+    question: "Is there a dress code?",
+    answer:
+      "There is no strict dress code, but guests are welcome to dress in the event colours: Olive Green and Touch of Gold."
+  }
 ];
+
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);

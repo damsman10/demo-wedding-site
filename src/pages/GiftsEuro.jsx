@@ -17,14 +17,23 @@ const GiftsEuro = () => {
       </div>
 
       <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12 leading-relaxed">
-        Thank you for your kindness and generosity.  
-        Your gift in <strong>Euros (€)</strong> is a meaningful contribution to our new journey together.
+        Your support means the world to us.  
+        Complete your gift securely through PayPal or you can copy the bank account below.  
+        Thank you for choosing to be a blessing. 💛
       </p>
 
-      {/* Transfer Details Box */}
-      <div className="max-w-xl mx-auto bg-[#fff9e8] border border-[#f1b42f] rounded-xl p-8 shadow-md mb-16">
+      {/* EMBEDDED PAYPAL PAYMENT */}
+      <div className="mb-16 flex justify-center">
+        <iframe
+          src="https://www.paypal.com/donate/buttons/example"  
+          className="w-full md:w-2/4 h-[750px] rounded-xl border"
+        ></iframe>
+      </div>
+
+      {/* EU BANK TRANSFER DETAILS */}
+      <div className="max-w-xl mx-auto bg-[#fffdf5] border border-[#e4c989] rounded-xl p-8 shadow-sm mb-16">
         <h3 className="text-2xl font-semibold text-[#b3871f] mb-4">
-          EU Bank Transfer Details
+          Prefer Bank Transfer?
         </h3>
 
         <p className="text-lg text-gray-800 mb-2">
@@ -48,13 +57,23 @@ const GiftsEuro = () => {
         </button>
       </div>
 
-      {/* Link back to Naira page */}
+      {/* CURRENCY SWITCH LINKS */}
       <div className="mt-10 sm:block hidden">
         <Link
           to="/gifts/naira"
           className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
         >
           Switch to Naira (₦) Gift Page
+          <span>→</span>
+        </Link>
+      </div>
+
+      <div className="mt-3 sm:block hidden">
+        <Link
+          to="/gifts/dollar"
+          className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
+        >
+          Switch to Dollar ($) Gift Page
           <span>→</span>
         </Link>
       </div>

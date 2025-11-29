@@ -4,7 +4,7 @@ import bgp from "../assets/fruswoman.jpg";
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  // Set your wedding date here
+  // Set your wedding date here (from invitation card)
   const weddingDate = new Date("2025-12-31T15:00:00");
 
   useEffect(() => {
@@ -39,11 +39,10 @@ const Hero = () => {
       {/* Centered Content */}
       <div className="relative text-center mt-20 px-6 md:px-12 text-white max-w-3xl space-y-3">
         {/* Couple Name */}
-
         <div className="space-y-1">
-          <h1 className="text-4xl font-bold tracking-wide">JANE</h1>
+          <h1 className="text-4xl font-bold tracking-wide">JESUTOFUNMI</h1>
           <h1 className="text-4xl font-bold tracking-wide text-[#f1b42f]">&</h1>
-          <h1 className="text-4xl font-bold tracking-wide">JOHN</h1>
+          <h1 className="text-4xl font-bold tracking-wide">MICHAEL</h1>
         </div>
 
         {/* Invitation */}
@@ -61,8 +60,11 @@ const Hero = () => {
 
         {/* Location & Date */}
         <div className="mt-4 md:mt-6 space-y-1 text-lg md:text-xl">
-          <p>St. Mary’s Church, New York</p>
+          <p>Rosewood Gardens, Lagos</p>
           <p>December 31, 2025</p>
+          <p className="text-sm text-gray-200 mt-1">
+            For inquiries or directions, contact Jesutofunmi at 08168965322
+          </p>
         </div>
 
         {/* Countdown Timer */}

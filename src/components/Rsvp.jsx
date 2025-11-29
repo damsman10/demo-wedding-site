@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const Rsvp = () => {
   const [fullName, setFullName] = useState("");
-  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState(""); // updated
   const [response, setResponse] = useState("");
   const [guests, setGuests] = useState("");
 
@@ -12,12 +12,12 @@ const Rsvp = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!fullName || !email || !response) return;
+    if (!fullName || !phone || !response) return;
     if (response === "Joyfully Accept" && !guests) return;
 
     const payload = {
       fullName,
-      email,
+      phone, // updated
       response,
       guests: response === "Joyfully Accept" ? guests : "0",
     };
@@ -26,7 +26,7 @@ const Rsvp = () => {
       setLoading(true);
 
       await fetch(
-        "https://script.google.com/macros/s/AKfycbz4_0VSIl61dmVLcCym_FxCnrskWmVibjP60GkrZqg4Z1NS4p0hbE5a-iya8mOvlE1X/exec",
+        "https://script.google.com/macros/s/AKfycbx4CPhO179g69J0dZI1Kl9XFWbcAcEFfZfjS2_V9CsjFocQPdt8ZklJA7eTAqlG6mvr/exec",
         {
           method: "POST",
           mode: "no-cors",
@@ -39,7 +39,7 @@ const Rsvp = () => {
 
       // Clear form
       setFullName("");
-      setEmail("");
+      setPhone(""); // updated
       setResponse("");
       setGuests("");
     } catch (error) {
@@ -81,17 +81,17 @@ const Rsvp = () => {
           />
         </div>
 
-        {/* Email */}
+        {/* WhatsApp Phone Number */}
         <div>
           <label className="block text-lg text-gray-800 text-left mb-2">
-            Email Address
+            WhatsApp Phone Number
           </label>
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            type="tel"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
             className="w-full p-3 border border-[#f1b42f] rounded-md text-lg focus:ring-2 focus:ring-[#f1b42f]"
-            placeholder="Your email address"
+            placeholder="e.g. +2348012345678"
             required
           />
         </div>

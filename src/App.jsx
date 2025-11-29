@@ -4,9 +4,10 @@ import Footer from "./components/Sticky/Footer"
 import Home from "./pages/Home";
 import Gallery from "./pages/GalleryPage";
 import GiftsNaira from "./pages/GiftsNaira";
-import GiftsPounds from "./pages/GiftsPounds";
+import GiftsDollar from "./pages/GiftsDollar";
 import GiftsEuro from "./pages/GiftsEuro";
 import ScrollToTop from "./components/ScrollToTop";
+// import FloatingWhatsApp from "./components/Floating Whatsapp";
 
 import MobileGiftButton from "./components/MobileGiftButton";
 // import Rsvp from "./pages/Rsvp";
@@ -18,13 +19,15 @@ export default function App() {
 
       <MobileGiftButton />
       <ScrollToTop />
+      {/* <FloatingWhatsApp /> */}
+
       <Routes>
         
         <Route path="/" element={<Home />} />
         <Route path="/gallery" element={<Gallery />} />
 
         <Route path="/gifts/naira" element={<GiftsNaira />} />
-        <Route path="/gifts/pounds" element={<GiftsPounds />} />
+        <Route path="/gifts/dollar" element={<GiftsDollar />} />
         <Route path="/gifts/euro" element={<GiftsEuro />} />
 
         {/* <Route path="/rsvp" element={<Rsvp />} /> */}

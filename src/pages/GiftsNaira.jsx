@@ -17,24 +17,22 @@ const GiftsNaira = () => {
       </div>
 
       <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12 leading-relaxed">
-        Your support means the world to us.  
-        Complete your gift securely through Paystack or you can copy the bank account below.  
+        Your support means the world to us.   
         Thank you for choosing to be a blessing. 💛
       </p>
 
       {/* EMBEDDED PAYSTACK PAYMENT PAGE */}
-      <div className="mb-16 flex justify-center">
+      {/* <div className="mb-16 flex justify-center">
         <iframe
           src="https://paystack.shop/pay/xv1-zobzym"
           className="w-full md:w-2/4 h-[750px] rounded-xl border"
           allow="payment *"
         ></iframe>
-      </div>
+      </div> */}
 
       {/* BANK TRANSFER DETAILS */}
       <div className="max-w-xl mx-auto bg-[#fffdf5] border border-[#e4c989] rounded-xl p-8 shadow-sm mb-16">
         <h3 className="text-2xl font-semibold text-[#b3871f] mb-4">
-          Prefer Bank Transfer?
         </h3>
 
         <p className="text-lg text-gray-800 mb-2">
@@ -70,10 +68,10 @@ const GiftsNaira = () => {
       {/* SWITCH TO POUNDS PAGE */}
       <div className="mt-3 sm:block hidden">
       <Link
-        to="/gifts/pounds"
+        to="/gifts/dollar"
         className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
       >
-        Switch to Pounds (£) Gift Page
+        Switch to dollar ($) Gift Page
         <span>→</span>
       </Link>
     </div>

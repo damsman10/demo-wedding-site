@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import flower1 from "../assets/coin.png";
 import flower2 from "../assets/coin.png";
@@ -47,20 +46,20 @@ const Gifts = () => {
           Send Naira (₦)
         </Link>
 
+        {/* Pounds button (third) */}
+        <Link
+          to="/gifts/dollar"
+          className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
+        >
+          Send Dollar ($)
+        </Link>
+
         {/* Euro button (second) */}
         <Link
           to="/gifts/euro"
           className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
         >
           Send Euro (€)
-        </Link>
-
-        {/* Pounds button (third) */}
-        <Link
-          to="/gifts/pounds"
-          className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
-        >
-          Send Pounds (£)
         </Link>
       </div>
 

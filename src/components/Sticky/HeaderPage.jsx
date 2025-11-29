@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import ShareButton from "../ShareButton";
+import logo from "../../assets/ojlogo.png";
 
 const HeaderPage = () => {
   const [open, setOpen] = useState(false);
@@ -12,9 +13,9 @@ const HeaderPage = () => {
         {/* Logo */}
         <Link
           to="/"
-          className="text-white text-2xl font-bold tracking-wider"
+          className=""
         >
-          JANE <span className="text-[#f1b42f]">&</span> JOHN
+          <img src={logo} alt="" className="w-18" />
         </Link>
 
         {/* Desktop Nav */}
@@ -25,8 +26,8 @@ const HeaderPage = () => {
           <Link to="/#party" className="hover:text-[#f1b42f] transition">
             MEET THE PARTY
           </Link>
-          <Link to="/#gifts" className="hover:text-[#f1b42f] transition">
-            GIFT
+          <Link to="/#faq" className="hover:text-[#f1b42f] transition">
+            FAQ
           </Link>
           <Link to="/#rsvp" className="hover:text-[#f1b42f] transition">
             RSVP
@@ -43,7 +44,7 @@ const HeaderPage = () => {
         {/* Confirm Button */}
         <Link
           to="/#gifts"
-          className="hidden md:block bg-[#f1b42f] text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:brightness-110 transition"
+          className="hidden md:block bg-[#758a2f] text-white px-5 py-2.5 rounded-full font-semibold text-sm hover:brightness-110 transition"
         >
           SEND GIFT
         </Link>
@@ -66,8 +67,8 @@ const HeaderPage = () => {
           <Link to="/#party" className="block hover:text-[#f1b42f] transition">
             MEET THE PARTY
           </Link>
-          <Link to="/#gifts" className="block hover:text-[#f1b42f] transition">
-            GIFT
+          <Link to="/#faq" className="block hover:text-[#f1b42f] transition">
+            FAQ
           </Link>
           <Link to="/#rsvp" className="block hover:text-[#f1b42f] transition">
             RSVP
@@ -77,7 +78,7 @@ const HeaderPage = () => {
           </Link>
           <Link
             to="/#gifts"
-            className="block bg-[#f1b42f] text-white px-6 py-3 rounded-full text-center font-semibold mt-3 hover:brightness-110 transition"
+            className="block bg-[#758a2f] text-white px-6 py-3 rounded-full text-center font-semibold mt-3 hover:brightness-110 transition"
           >
             SEND GIFT
           </Link>

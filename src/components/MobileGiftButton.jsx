@@ -22,7 +22,7 @@ const MobileGiftButton = () => {
     >
       {/* Main static button */}
       <button
-        className="bg-[#f1b42f] text-white text-sm sm:text-base font-semibold py-3 px-6 rounded-full shadow-md hover:brightness-110 transition text-center whitespace-nowrap flex items-center gap-2"
+        className="bg-[#b27c33] text-white text-sm sm:text-base font-semibold py-3 px-6 rounded-full shadow-md hover:brightness-110 transition text-center whitespace-nowrap flex items-center gap-2"
       >
         Send Cash <span>→</span>
       </button>
@@ -30,19 +30,19 @@ const MobileGiftButton = () => {
       {/* Currency buttons */}
       <Link
         to="/gifts/naira"
-        className="bg-[#f1b42f] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
+        className="bg-[#b27c33] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
       >
         ₦
       </Link>
       <Link
         to="/gifts/dollar"
-        className="bg-[#f1b42f] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
+        className="bg-[#b27c33] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
       >
         $
       </Link>
       <Link
         to="/gifts/euro"
-        className="bg-[#f1b42f] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
+        className="bg-[#b27c33] text-white text-sm font-semibold py-3 px-4 rounded-full shadow-md hover:brightness-110 transition text-center"
       >
         €
       </Link>

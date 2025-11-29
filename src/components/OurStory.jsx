@@ -42,7 +42,7 @@ const OurStory = () => {
       {/* Section Header with dividers */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#f1b42f]">Our Story</h2>
+        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">Our Story</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
@@ -54,7 +54,7 @@ const OurStory = () => {
             <img
               src={Groom}
               alt="Groom"
-              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#f1b42f]"
+              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]"
             />
             <p className="text-xl text-gray-800">
               From the moment we met, I knew there was something special. Our bond grew stronger over time, filled with shared laughter, adventures, and love. I can’t wait to call her my wife.
@@ -66,7 +66,7 @@ const OurStory = () => {
             <img
               src={Bride}
               alt="Bride"
-              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#f1b42f]"
+              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]"
             />
             <p className="text-xl text-gray-800">
               The day I met him, I knew my life was about to change. He brought joy, laughter, and love into my life, and I can’t imagine spending my future with anyone else but him.
@@ -82,7 +82,7 @@ const OurStory = () => {
           <img
             src={Groom}
             alt="Groom"
-            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#f1b42f]"
+            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]"
           />
           <p className="text-xl text-gray-800 max-w-lg">
             From the moment we met, I knew there was something special. Our bond grew stronger over time, filled with shared laughter, adventures, and love. I can’t wait to call her my wife.
@@ -94,7 +94,7 @@ const OurStory = () => {
           <img
             src={Bride}
             alt="Bride"
-            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#f1b42f]"
+            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]"
           />
           <p className="text-xl text-gray-800 max-w-lg">
             The day I met him, I knew my life was about to change. He literally brought joy, laughter, and love into my life, and I can’t imagine spending my future with anyone else but him.

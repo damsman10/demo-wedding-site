@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Appreciation Paragraph */}
         <div className="flex flex-col gap-6">
           <a href="#home" className="text-white text-2xl font-bold tracking-wider">
-          JANE <span className="text-[#f1b42f]">&</span> JOHN
+          JUDITH <span className="text-[#f1b42f]">&</span> OPE
         </a>
           <p className="text-lg mb-4">
             Thank you for visiting our wedding website. Your love, support, and presence mean the world to us. We’re excited to celebrate this special day with you!

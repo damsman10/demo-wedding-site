@@ -25,7 +25,7 @@ const Gifts = () => {
       {/* Decorative gold lines */}
       <div className="flex items-center justify-center mb-6">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <span className="mx-4 text-4xl font-bold text-[#f1b42f]">
+        <span className="mx-4 text-4xl font-bold text-[#b27c33]">
           Gifts & Blessings
         </span>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
@@ -41,7 +41,7 @@ const Gifts = () => {
         {/* Naira button */}
         <Link
           to="/gifts/naira"
-          className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
+          className="px-10 py-3 bg-[#b27c33] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
         >
           Send Naira (₦)
         </Link>
@@ -49,7 +49,7 @@ const Gifts = () => {
         {/* Pounds button (third) */}
         <Link
           to="/gifts/dollar"
-          className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
+          className="px-10 py-3 bg-[#b27c33] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
         >
           Send Dollar ($)
         </Link>
@@ -57,7 +57,7 @@ const Gifts = () => {
         {/* Euro button (second) */}
         <Link
           to="/gifts/euro"
-          className="px-10 py-3 bg-[#f1b42f] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
+          className="px-10 py-3 bg-[#b27c33] text-white text-lg font-semibold rounded-full hover:brightness-110 transition shadow-md"
         >
           Send Euro (€)
         </Link>

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import couple from "../assets/couple.jpg";
+import couple2 from "../assets/couple2.jpg";
+import couple3 from "../assets/couple3.jpg";
 import solidbg from "../assets/solidbg.jpg";
 
 const HomeGallery = () => {
-  const images = [couple, couple, couple];
+  const images = [couple, couple2, couple3];
 
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(null);
@@ -15,7 +17,7 @@ const HomeGallery = () => {
       {/* Section Header with dividers */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#f1b42f]">Gallery</h2>
+        <h2 className="mx-4 text-4xl font-bold text-[#a67304]">Gallery</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
@@ -37,7 +39,7 @@ const HomeGallery = () => {
       {/* Button to full gallery page */}
       <Link
         to="/gallery"
-        className="inline-block mt-8 px-8 py-3 bg-[#f1b42f] text-white rounded-full text-lg font-semibold hover:brightness-110 transition"
+        className="inline-block mt-8 px-8 py-3 bg-[#a67304] text-white rounded-full text-lg font-semibold hover:brightness-110 transition"
       >
         View Full Gallery
       </Link>

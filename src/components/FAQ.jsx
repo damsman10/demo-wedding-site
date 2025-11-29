@@ -52,11 +52,11 @@ const FAQ = () => {
   };
 
   return (
-    <section className="py-24 px-6 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white text-center">
+    <section id="faq" className="py-24 px-6 bg-gradient-to-b from-yellow-100 via-yellow-50 to-white text-center">
       {/* Section Header with divider lines */}
       <div className="flex items-center justify-center mb-10">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#f1b42f]">FAQs</h2>
+        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">FAQs</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 

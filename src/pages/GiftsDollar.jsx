@@ -8,9 +8,9 @@ const GiftsDollar = () => {
       <HeaderPage />
 
       {/* header with gold lines */}
-      <div className="flex items-center justify-center mb-6">
+      <div className="font-montserrat flex items-center justify-center mb-6">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#f1b42f]">
+        <h2 className="mx-4 text-4xl font-bold text-[#a67304]">
           Bless Us With A Gift ($)
         </h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>

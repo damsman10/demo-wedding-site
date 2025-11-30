@@ -55,16 +55,16 @@ const Rsvp = () => {
       {/* Title */}
       <div className="flex items-center justify-center mb-6">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">RSVP</h2>
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-[#b27c33]">RSVP</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
-      <p className="text-xl text-gray-700 mb-8">
+      <p className="text-xl font-montserrat text-gray-700 mb-8">
         Please let us know if you'll be attending our wedding.
       </p>
 
       {/* FORM */}
-      <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-6">
+      <form onSubmit={handleSubmit} className=" font-montserrat max-w-lg mx-auto space-y-6">
 
         {/* Full Name */}
         <div>

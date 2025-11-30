@@ -24,14 +24,14 @@ const OurStory = () => {
   return (
     <section id="our-story" className="relative py-24 px-6 bg-white text-center">
       {/* Wedding flowers at top left and top right */}
-      <div className="absolute top-6 left-0 w-30 h-30">
+      <div className="absolute -top-11 left-0 w-50 h-50">
         <img
           src={flowerleft}
           alt="Wedding Flower"
           className="w-full h-full object-contain"
         />
       </div>
-      <div className="absolute top-6 right-0 w-30 h-30">
+      <div className="absolute -top-11 right-0 w-50 h-50">
         <img
           src={flowerright}
           alt="Wedding Flower"
@@ -42,12 +42,12 @@ const OurStory = () => {
       {/* Section Header with dividers */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">Our Story</h2>
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-[#b27c33]">Our Story</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
       {/* Responsive layout: Slider on mobile */}
-      <div className="md:hidden">
+      <div className="md:hidden font-montserrat">
         <Slider {...settings}>
           {/* Groom's Slide */}
           <div className="flex flex-col items-center">

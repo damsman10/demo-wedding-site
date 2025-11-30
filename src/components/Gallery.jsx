@@ -17,7 +17,7 @@ const HomeGallery = () => {
       {/* Section Header with dividers */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#a67304]">Gallery</h2>
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-[#a67304]">Gallery</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
@@ -39,7 +39,7 @@ const HomeGallery = () => {
       {/* Button to full gallery page */}
       <Link
         to="/gallery"
-        className="inline-block mt-8 px-8 py-3 bg-[#a67304] text-white rounded-full text-lg font-semibold hover:brightness-110 transition"
+        className="inline-block font-montserrat mt-8 px-8 py-3 bg-[#a67304] text-white rounded-full text-lg font-semibold hover:brightness-110 transition"
       >
         View Full Gallery
       </Link>

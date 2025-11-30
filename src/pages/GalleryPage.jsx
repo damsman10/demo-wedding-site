@@ -29,7 +29,7 @@ const GalleryPage = () => {
       {/* Section Title with dividers */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h1 className="mx-4 text-5xl font-bold text-[#f1b42f]">Wedding Gallery</h1>
+        <h1 className="mx-4 text-5xl font-bold text-[#a67304]">Wedding Gallery</h1>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 

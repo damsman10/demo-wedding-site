@@ -25,19 +25,19 @@ const Gifts = () => {
       {/* Decorative gold lines */}
       <div className="flex items-center justify-center mb-6">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <span className="mx-4 text-4xl font-bold text-[#b27c33]">
+        <span className="mx-4 text-4xl font-raleway font-bold text-[#b27c33]">
           Gifts & Blessings
         </span>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
-      <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-10">
+      <p className="text-xl font-montserrat text-gray-700 max-w-2xl mx-auto mb-10">
         As we begin this beautiful journey together, your love and support mean the world to us.
         <br />
         If you would like to bless us with a gift, we truly appreciate your kindness and generosity.
       </p>
 
-      <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-8">
+      <div className="flex flex-col font-montserrat sm:flex-row gap-6 justify-center items-center mt-8">
         {/* Naira button */}
         <Link
           to="/gifts/naira"

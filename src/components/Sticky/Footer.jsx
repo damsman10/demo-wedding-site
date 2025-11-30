@@ -5,12 +5,12 @@ import ShareButton from "../ShareButton";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#a67304] text-white py-12">
+    <footer className="bg-[#a67304] font-montserrat text-white py-12">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
         {/* Appreciation Paragraph */}
         <div className="flex flex-col gap-6">
-          <a href="#home" className="text-white text-2xl font-bold tracking-wider">
+          <a href="#home" className="text-white font-mea-culpa text-2xl font-bold tracking-wider">
           JUDITH <span className="text-[#f1b42f]">&</span> OPE
         </a>
           <p className="text-lg mb-4">
@@ -57,7 +57,7 @@ const Footer = () => {
 
       {/* Bottom line: copyright + credit */}
       <div className="mt-8 border-t border-white/40 pt-4 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} John & Jane's Wedding.</p>
+        <p>&copy; {new Date().getFullYear()} #JourneyWithOJ2026</p>
         <p className="mt-2 pb-4 sm:pb-0">
           Developed by <a href="https://syndeco-technologies.vercel.app/" target="_blank" rel="noopener noreferrer" className="underline font-semibold">Syndeco Technologies</a>
         </p>

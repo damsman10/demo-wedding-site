@@ -56,7 +56,7 @@ const FAQ = () => {
       {/* Section Header with divider lines */}
       <div className="flex items-center justify-center mb-10">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">FAQs</h2>
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-[#b27c33]">FAQs</h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
@@ -64,7 +64,7 @@ const FAQ = () => {
         {faqs.map((faq, index) => (
           <div
             key={index}
-            className="border border-gray-200 rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer"
+            className="border border-gray-200 font-montserrat rounded-lg p-4 shadow-sm hover:shadow-md transition cursor-pointer"
             onClick={() => toggleIndex(index)}
           >
             <h3 className="text-lg font-semibold text-gray-800 flex justify-between items-center">

@@ -23,7 +23,7 @@ const Party = () => {
       {/* Section Header */}
       <div className="flex items-center justify-center mb-10">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-bold text-[#b27c33]">
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-[#b27c33]">
           Wedding Party
         </h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
@@ -41,7 +41,7 @@ const Party = () => {
               alt={member.name}
               className="w-full h-40 object-cover rounded-t-xl"
             />
-            <div className="p-2">
+            <div className="p-2 font-montserrat">
               <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
               <p className="text-gray-600 text-sm">{member.role}</p>
             </div>

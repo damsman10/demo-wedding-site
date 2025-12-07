@@ -6,12 +6,18 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-// import flowerright from "../assets/flowerright.png";
-// import flowerleft from "../assets/flowerleft.png";
-
 const OurStory = () => {
-  const [showGroomFull, setShowGroomFull] = useState(false);
-  const [showBrideFull, setShowBrideFull] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState("");
+  const [modalTitle, setModalTitle] = useState("");
+
+  const openModal = (title, story) => {
+    setModalTitle(title);
+    setModalContent(story);
+    setModalOpen(true);
+  };
+
+  const closeModal = () => setModalOpen(false);
 
   const settings = {
     dots: true,
@@ -22,10 +28,6 @@ const OurStory = () => {
     autoplay: true,
     autoplaySpeed: 3000,
   };
-
-  // ----------------------------
-  // NEW DEMO STORIES
-  // ----------------------------
 
   const groomStory = `
     We first met in the most unexpected way — at a friend’s small gathering where neither of us planned to stay long. 
@@ -55,7 +57,6 @@ const OurStory = () => {
     Saying “yes” to him was the easiest and most beautiful choice I’ve ever made.
   `;
 
-  // Utility to limit to first 2 paragraphs
   const getPreview = (story) => {
     const paragraphs = story.trim().split("\n").filter(p => p.trim() !== "");
     return paragraphs.slice(0, 2).join("\n\n");
@@ -64,60 +65,49 @@ const OurStory = () => {
   return (
     <section id="our-story" className="relative py-24 px-6 bg-white text-left">
 
-      {/* Flowers */}
-      {/* <div className="absolute -top-11 left-0 w-50 h-50">
-        <img src={flowerleft} alt="Wedding Flower" className="w-full h-full object-contain" />
-      </div>
-      <div className="absolute -top-11 right-0 w-50 h-50">
-        <img src={flowerright} alt="Wedding Flower" className="w-full h-full object-contain" />
-      </div> */}
-
-      {/* Header */}
       <div className="flex items-center justify-center mb-12">
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
-        <h2 className="mx-4 text-4xl font-raleway font-bold text-center text-[#b27c33]">Our Story</h2>
+        <h2 className="mx-4 text-4xl font-raleway font-bold text-center text-[#b27c33]">
+          Our Story
+        </h2>
         <span className="w-16 h-[2px] bg-[#f1b42f]"></span>
       </div>
 
-      {/* MOBILE SLIDER */}
+      {/* MOBILE */}
       <div className="md:hidden font-montserrat">
         <Slider {...settings}>
 
           {/* Groom */}
           <div className="flex flex-col text-center items-center">
-            <div className="flex justify-center">
-              <img src={Groom} alt="Groom" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
-            </div>
+            <img src={Groom} alt="Groom"
+              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
 
             <p className="text-[18px] text-gray-800 whitespace-pre-line">
-              {showGroomFull ? groomStory : getPreview(groomStory)}
+              {getPreview(groomStory)}
             </p>
 
-            <div className="text-center">
-              <button
-                className="mt-4 text-[#b27c33] font-semibold cursor-pointer"
-                onClick={() => setShowGroomFull(!showGroomFull)}
-              >
-                {showGroomFull ? "See Less" : "Read More"}
-              </button>
-            </div>
+            <button
+              className="mt-4 text-[#b27c33] font-semibold"
+              onClick={() => openModal("Groom’s Story", groomStory)}
+            >
+              Read More
+            </button>
           </div>
 
           {/* Bride */}
           <div className="flex flex-col text-center items-center">
-            <div className="flex justify-center">
-              <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
-            </div>
+            <img src={Bride} alt="Bride"
+              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
 
             <p className="text-[18px] text-gray-800 whitespace-pre-line">
-              {showBrideFull ? brideStory : getPreview(brideStory)}
+              {getPreview(brideStory)}
             </p>
 
             <button
-              className="mt-4 text-[#b27c33] font-semibold cursor-pointer"
-              onClick={() => setShowBrideFull(!showBrideFull)}
+              className="mt-4 text-[#b27c33] font-semibold"
+              onClick={() => openModal("Bride’s Story", brideStory)}
             >
-              {showBrideFull ? "See Less" : "Read More"}
+              Read More
             </button>
           </div>
 
@@ -129,36 +119,66 @@ const OurStory = () => {
         
         {/* Groom */}
         <div className="flex flex-col items-center max-w-lg">
-          <img src={Groom} alt="Groom" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+          <img src={Groom} alt="Groom"
+            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
 
           <p className="text-[18px] text-gray-800 whitespace-pre-line">
-            {showGroomFull ? groomStory : getPreview(groomStory)}
+            {getPreview(groomStory)}
           </p>
+
           <button
-            className="mt-4 text-[#b27c33] font-semibold cursor-pointer"
-            onClick={() => setShowGroomFull(!showGroomFull)}
+            className="mt-4 text-[#b27c33] font-semibold"
+            onClick={() => openModal("Groom’s Story", groomStory)}
           >
-            {showGroomFull ? "See Less" : "Read More"}
+            Read More
           </button>
         </div>
 
         {/* Bride */}
         <div className="flex flex-col items-center max-w-lg">
-          <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]}" />
+          <img src={Bride} alt="Bride"
+            className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
 
           <p className="text-[18px] text-gray-800 whitespace-pre-line">
-            {showBrideFull ? brideStory : getPreview(brideStory)}
+            {getPreview(brideStory)}
           </p>
+
           <button
-            className="mt-4 text-[#b27c33] font-semibold cursor-pointer"
-            onClick={() => setShowBrideFull(!showBrideFull)}
+            className="mt-4 text-[#b27c33] font-semibold"
+            onClick={() => openModal("Bride’s Story", brideStory)}
           >
-            {showBrideFull ? "See Less" : "Read More"}
+            Read More
           </button>
         </div>
-
       </div>
 
+      {/* MODAL */}
+      {modalOpen && (
+        <div
+          className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 px-4"
+          onClick={closeModal}
+        >
+          <div
+            className="bg-white rounded-lg max-w-xl w-full p-6 relative shadow-xl max-h-[80vh] overflow-y-auto"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h3 className="text-2xl font-bold text-[#b27c33] mb-4">
+              {modalTitle}
+            </h3>
+
+            <p className="text-gray-700 whitespace-pre-line leading-relaxed">
+              {modalContent}
+            </p>
+
+            <button
+              className="absolute top-3 right-4 text-gray-500 text-xl hover:text-black"
+              onClick={closeModal}
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };

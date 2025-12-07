@@ -1,12 +1,12 @@
 import React from "react";
 
 // Example assets
-import bridesmaid1 from "../assets/woman.jpg";
-import bridesmaid2 from "../assets/woman.jpg";
-import groomsman1 from "../assets/man.jpeg";
-import groomsman2 from "../assets/man.jpeg";
-import planner from "../assets/woman.jpg"; // Event planner
-import officiant from "../assets/man.jpeg"; // Officiant
+import bridesmaid1 from "../assets/woman1.jpg";
+import bridesmaid2 from "../assets/woman2.jpg";
+import groomsman1 from "../assets/man3.jpg";
+import groomsman2 from "../assets/man2.jpg";
+import planner from "../assets/woman3.jpg"; // Event planner
+import officiant from "../assets/man1.jpg"; // Officiant
 
 const Party = () => {
   const members = [
@@ -15,7 +15,7 @@ const Party = () => {
     { name: "David", role: "Groomsman", img: groomsman1 },
     { name: "James", role: "Groomsman", img: groomsman2 },
     { name: "Lara", role: "Event Planner", img: planner },
-    { name: "Rev. Michael", role: "Officiant", img: officiant },
+    { name: "Fr. Vilgefortz", role: "Officiant", img: officiant },
   ];
 
   return (

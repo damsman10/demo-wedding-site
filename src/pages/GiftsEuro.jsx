@@ -24,7 +24,7 @@ const GiftsEuro = () => {
       {/* PayPal Button */}
       <div className="mb-16 flex justify-center">
         <button
-          onClick={() => window.open("https://www.paypal.com/pool/9kuMNfEmoY?sr=wccr", "_blank")}
+          onClick={() => window.open("https://www.paypal.com/pool/", "_blank")}
           className="px-6 py-3 bg-[#f1b42f] text-white rounded-full font-semibold hover:brightness-110 transition"
         >
           Contribute via PayPal
@@ -38,20 +38,20 @@ const GiftsEuro = () => {
         </h3>
 
         <p className="text-lg text-gray-800 mb-2">
-          <strong>Bank Name:</strong> Revolut Bank
+          <strong>Bank Name:</strong> Provident Bank Europe
         </p>
         <p className="text-lg text-gray-800 mb-2">
-          <strong>Account Name:</strong> John & Jane Wedding Gift
+          <strong>Account Name:</strong> Amara Oluchi Johnson & David Ikenna Okoro
         </p>
         <p className="text-lg text-gray-800 mb-2">
-          <strong>IBAN:</strong> EU12 3456 7890 1234 5678 90
+          <strong>IBAN:</strong> EU32 1234 5678 9012 3456 78
         </p>
         <p className="text-lg text-gray-800 mb-6">
-          <strong>BIC / SWIFT:</strong> REVOGB21
+          <strong>BIC / SWIFT:</strong> PROVEU22
         </p>
 
         <button
-          onClick={() => navigator.clipboard.writeText("EU12 3456 7890 1234 5678 90")}
+          onClick={() => navigator.clipboard.writeText("EU32 1234 5678 9012 3456 78")}
           className="px-6 py-3 bg-[#f1b42f] text-white rounded-full font-semibold hover:brightness-110 transition"
         >
           Copy IBAN

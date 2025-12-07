@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
-import bgp from "../assets/herobg.jpg";
+import bgp from "../assets/herobg.png";
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
-  // Wedding date from invitation
-  const weddingDate = new Date("2026-03-07T13:00:00");
+  // Demo wedding date
+  const weddingDate = new Date("2026-06-20T14:00:00");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -39,7 +39,7 @@ const Hero = () => {
         {/* Couple Names */}
         <div className="relative block">
           <h1 className="text-5xl mb-16 md:text-6xl font-playfair tracking-wide block">
-            JUDITH
+            AMARA
           </h1>
 
           {/* Ampersand */}
@@ -48,13 +48,13 @@ const Hero = () => {
           </span>
 
           <h1 className="text-5xl mb-6 md:text-6xl font-playfair tracking-wide block">
-            OPEOLUWA
+            DAVID
           </h1>
         </div>
 
         {/* Invitation */}
         <p className="text-xl md:text-2xl font-courgette mt-4">
-          We joyfully invite you to attend our wedding ceremony
+          We joyfully invite you to celebrate our wedding day
         </p>
 
         {/* RSVP Button */}
@@ -65,13 +65,10 @@ const Hero = () => {
           RSVP
         </a>
 
-        {/* Location & Date (RESTORED) */}
+        {/* Location & Date */}
         <div className="mt-4 md:mt-6 space-y-1 text-lg md:text-xl font-montserrat">
-          <p>Pleasant Event Center, Ikeja, Lagos</p>
-          <p>March 07, 2026</p>
-          {/* <p className="text-sm text-gray-200 mt-1 font-raleway">
-            For inquiries or directions, contact Jesutofunmi at 08168965322
-          </p> */}
+          <p>Rosewood Garden Estate, California</p>
+          <p>June 20, 2026</p>
         </div>
 
         {/* Countdown Timer */}

@@ -22,61 +22,59 @@ const GiftsNaira = () => {
       </p>
 
       {/* EMBEDDED PAYSTACK PAYMENT PAGE */}
-      {/* <div className="mb-16 flex justify-center">
+      <div className="mb-16 flex justify-center">
         <iframe
           src="https://paystack.shop/pay/xv1-zobzym"
           className="w-full md:w-2/4 h-[750px] rounded-xl border"
           allow="payment *"
         ></iframe>
-      </div> */}
+      </div> 
 
       {/* BANK TRANSFER DETAILS */}
       <div className="max-w-xl mx-auto bg-[#fffdf5] border border-[#e4c989] rounded-xl p-8 shadow-sm mb-16">
         <h3 className="text-2xl font-semibold text-[#b3871f] mb-4">
+          Bank Transfer Details
         </h3>
 
         <p className="text-lg text-gray-800 mb-2">
-          <strong>Bank Name:</strong> Access Bank
+          <strong>Bank Name:</strong> Provident Bank
         </p>
         <p className="text-lg text-gray-800 mb-2">
-          <strong>Account Name:</strong> John & Jane Wedding Gift
+          <strong>Account Name:</strong> Amara Oluchi Johnson & David Ikenna Okoro
         </p>
         <p className="text-lg text-gray-800 mb-6">
-          <strong>Account Number:</strong> 0123456789
+          <strong>Account Number:</strong> 1234567890
         </p>
 
         <button
-          onClick={() => navigator.clipboard.writeText("0123456789")}
+          onClick={() => navigator.clipboard.writeText("1234567890")}
           className="px-6 py-3 bg-[#f1b42f] text-white rounded-full font-semibold hover:brightness-110 transition"
         >
           Copy Account Number
         </button>
       </div>
 
-    {/* SWITCH TO EURO PAGE */}
+      {/* SWITCH TO EURO PAGE */}
+      <div className="mt-10 sm:block hidden">
+        <Link
+          to="/gifts/euro"
+          className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
+        >
+          Switch to Euro (€) Gift Page
+          <span>→</span>
+        </Link>
+      </div>
 
-    <div className="mt-10 sm:block hidden">
-      <Link
-        to="/gifts/euro"
-        className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
-      >
-        Switch to Euro (€) Gift Page
-        <span>→</span>
-      </Link>
-    </div>
-
-      {/* SWITCH TO POUNDS PAGE */}
+      {/* SWITCH TO DOLLAR PAGE */}
       <div className="mt-3 sm:block hidden">
-      <Link
-        to="/gifts/dollar"
-        className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
-      >
-        Switch to dollar ($) Gift Page
-        <span>→</span>
-      </Link>
-    </div>
-
-
+        <Link
+          to="/gifts/dollar"
+          className="text-[#b3871f] text-lg font-semibold hover:underline inline-flex items-center gap-2"
+        >
+          Switch to Dollar ($) Gift Page
+          <span>→</span>
+        </Link>
+      </div>
 
     </section>
   );

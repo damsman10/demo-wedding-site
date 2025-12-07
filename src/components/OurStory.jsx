@@ -6,8 +6,8 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import flowerright from "../assets/flowerright.png";
-import flowerleft from "../assets/flowerleft.png";
+// import flowerright from "../assets/flowerright.png";
+// import flowerleft from "../assets/flowerleft.png";
 
 const OurStory = () => {
   const [showGroomFull, setShowGroomFull] = useState(false);
@@ -23,35 +23,39 @@ const OurStory = () => {
     autoplaySpeed: 3000,
   };
 
+  // ----------------------------
+  // NEW DEMO STORIES
+  // ----------------------------
+
   const groomStory = `
-    It all began on 23 May 2022 — the day I first saw her. We were meant to meet our boss for an introductory meeting at work (yes, we worked in the same organisation). 
-    
-    I did not know it then, but that moment would change my life.
+    We first met in the most unexpected way — at a friend’s small gathering where neither of us planned to stay long. 
+    But the moment I started talking to her, everything slowed down. Her calm voice, her kindness, and the way she smiled 
+    made me feel like I had known her for years.
 
-    What struck me first was how easy it felt to talk to her. We connected like two puzzle pieces that had been waiting for each other. From that day, I found in Yodit a true friend — someone I could trust, someone whose presence made everything a little brighter.
+    What began as a simple conversation turned into hours of laughter, shared stories, and an effortless connection. 
+    It didn’t take long for me to realise that she brought a kind of peace and joy into my life that I had never felt before.
 
-    Before long, I realised I was looking forward to work a bit more than usual… simply because I knew I would see her smile. And that smile became the quiet 
-    highlight of my everyday.
+    Over time, our friendship grew into something deeper — something steady and genuine. 
+    She became the person I looked forward to seeing, the person I trusted the most, and the one who made every day brighter.
 
-    Fast forward to 2024. We had been together for a year, and the truth was clear to me: 
-    I did not want to live a single day without her. So, on 1 April 2024 (her birthday), 
-    with my heart racing and my thoughts all over the place, I asked her the 
-    most important question of my life: Will you marry me?
-
-    Her answer is the reason you’re reading this today.
+    Asking her to marry me was the easiest decision I’ve ever made.
   `;
 
   const brideStory = `
-    The day I met him, I knew my life was about to change. He brought joy, laughter, and love into my world in ways I never expected. His kindness, patience, and presence made every day feel lighter and more beautiful.
+    I didn’t expect anything unusual the day we met, but he quickly became someone unforgettable. 
+    There was something warm and reassuring about him — 
+    the way he listened, the way he laughed, and the effortless comfort he brought into every moment we shared.
 
-    What started as friendship quickly became something deeper — 
-    something steady, genuine, and filled with peace. With him, 
-    love feels effortless and true.
+    Our conversations flowed naturally, like we had known each other much longer than just a day. 
+    Soon, he became a constant in my life — a source of support, joy, and genuine companionship.
 
-    I can’t imagine sharing my future with anyone else but him.
+    With him, love has always felt simple and true. 
+    I found not just a partner, but my best friend — someone I trust deeply and look forward to building a life with.
+
+    Saying “yes” to him was the easiest and most beautiful choice I’ve ever made.
   `;
 
-  // Utility to limit to first 4 paragraphs
+  // Utility to limit to first 2 paragraphs
   const getPreview = (story) => {
     const paragraphs = story.trim().split("\n").filter(p => p.trim() !== "");
     return paragraphs.slice(0, 2).join("\n\n");
@@ -61,12 +65,12 @@ const OurStory = () => {
     <section id="our-story" className="relative py-24 px-6 bg-white text-left">
 
       {/* Flowers */}
-      <div className="absolute -top-11 left-0 w-50 h-50">
+      {/* <div className="absolute -top-11 left-0 w-50 h-50">
         <img src={flowerleft} alt="Wedding Flower" className="w-full h-full object-contain" />
       </div>
       <div className="absolute -top-11 right-0 w-50 h-50">
         <img src={flowerright} alt="Wedding Flower" className="w-full h-full object-contain" />
-      </div>
+      </div> */}
 
       {/* Header */}
       <div className="flex items-center justify-center mb-12">
@@ -80,8 +84,10 @@ const OurStory = () => {
         <Slider {...settings}>
 
           {/* Groom */}
-          <div className="flex flex-col items-center">
-            <img src={Groom} alt="Groom" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+          <div className="flex flex-col text-center items-center">
+            <div className="flex justify-center">
+              <img src={Groom} alt="Groom" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+            </div>
 
             <p className="text-[18px] text-gray-800 whitespace-pre-line">
               {showGroomFull ? groomStory : getPreview(groomStory)}
@@ -98,8 +104,10 @@ const OurStory = () => {
           </div>
 
           {/* Bride */}
-          <div className="flex flex-col items-center">
-            <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+          <div className="flex flex-col text-center items-center">
+            <div className="flex justify-center">
+              <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+            </div>
 
             <p className="text-[18px] text-gray-800 whitespace-pre-line">
               {showBrideFull ? brideStory : getPreview(brideStory)}
@@ -136,7 +144,7 @@ const OurStory = () => {
 
         {/* Bride */}
         <div className="flex flex-col items-center max-w-lg">
-          <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+          <img src={Bride} alt="Bride" className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]}" />
 
           <p className="text-[18px] text-gray-800 whitespace-pre-line">
             {showBrideFull ? brideStory : getPreview(brideStory)}

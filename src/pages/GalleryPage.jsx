@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import HeaderPage from "../components/Sticky/HeaderPage";
 import couple from "../assets/couple.jpg";
 import couple2 from "../assets/couple2.jpg";
 import couple3 from "../assets/couple3.jpg";
 import couple4 from "../assets/couple4.jpg";
 import couple5 from "../assets/couple5.jpg";
-import couple6 from "../assets/herobg.jpg";
+import couple6 from "../assets/herobg.png";
 
 const GalleryPage = () => {
   const images = [

@@ -17,16 +17,44 @@ const GiftsDollar = () => {
 
       <p className="text-xl text-gray-700 max-w-2xl mx-auto mb-12 leading-relaxed">
         Your support means the world to us.  
-        Complete your gift securely through PayPal. Thank you for choosing to be a blessing. 💛
+        Complete your gift securely through PayPal or via bank transfer.  
+        Thank you for choosing to be a blessing. 💛
       </p>
 
       {/* PayPal Button */}
       <div className="mb-16 flex justify-center">
         <button
-          onClick={() => window.open("https://www.paypal.com/pool/9kuMNfEmoY?sr=wccr", "_blank")}
+          onClick={() => window.open("https://www.paypal.com/pool/", "_blank")}
           className="px-6 py-3 bg-[#f1b42f] text-white rounded-full font-semibold hover:brightness-110 transition"
         >
           Contribute via PayPal
+        </button>
+      </div>
+
+      {/* US BANK TRANSFER DETAILS */}
+      <div className="max-w-xl mx-auto bg-[#fffdf5] border border-[#e4c989] rounded-xl p-8 shadow-sm mb-16">
+        <h3 className="text-2xl font-semibold text-[#b3871f] mb-4">
+          Prefer Bank Transfer?
+        </h3>
+
+        <p className="text-lg text-gray-800 mb-2">
+          <strong>Bank Name:</strong> Provident Bank USA
+        </p>
+        <p className="text-lg text-gray-800 mb-2">
+          <strong>Account Name:</strong> Amara Oluchi Johnson & David Ikenna Okoro
+        </p>
+        <p className="text-lg text-gray-800 mb-2">
+          <strong>Account Number:</strong> 9876543210
+        </p>
+        <p className="text-lg text-gray-800 mb-6">
+          <strong>Routing Number:</strong> 111000025
+        </p>
+
+        <button
+          onClick={() => navigator.clipboard.writeText("9876543210")}
+          className="px-6 py-3 bg-[#f1b42f] text-white rounded-full font-semibold hover:brightness-110 transition"
+        >
+          Copy Account Number
         </button>
       </div>
 

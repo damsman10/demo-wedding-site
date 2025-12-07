@@ -1,7 +1,7 @@
 const ShareButton = ({ variant = "button" }) => {
   const handleShare = () => {
     const shareData = {
-      title: "Judith and Ope's Wedding",
+      title: "Amara and David's Wedding",
       text: "You are invited! View the wedding details and RSVP:",
       url: window.location.href,
     };

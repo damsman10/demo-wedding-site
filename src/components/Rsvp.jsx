@@ -29,7 +29,7 @@ const Rsvp = () => {
       setLoading(true);
 
       await fetch(
-        "https://script.google.com/macros/s/AKfycby99Vf7SdvT2CybMn4aYg18KEEN7Qzl01Iz17IPEU2Hd57-1eA0_v70Qi7z0fsJbjT6/exec",
+        "https://script.google.com/macros/s/AKfycbwmSA5esn3_91DeRJoBqMaVBPY4HdLGkXeWXurzeJVZHAswdziE1pr_AXQEVE9SzmpP/exec",
         {
           method: "POST",
           mode: "no-cors",

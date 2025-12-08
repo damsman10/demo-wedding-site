@@ -79,10 +79,12 @@ const OurStory = () => {
 
           {/* Groom */}
           <div className="flex flex-col text-center items-center">
-            <img src={Groom} alt="Groom"
-              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
+            <div className="flex justify-center">
+              <img src={Groom} alt="Groom"
+                className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
 
-            <p className="text-[18px] text-gray-800 whitespace-pre-line">
+    
+                </div>        <p className="text-[18px] text-gray-800 whitespace-pre-line">
               {getPreview(groomStory)}
             </p>
 
@@ -96,9 +98,12 @@ const OurStory = () => {
 
           {/* Bride */}
           <div className="flex flex-col text-center items-center">
-            <img src={Bride} alt="Bride"
-              className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" />
-
+            <div className="flex justify-center">
+              <img src={Bride} alt="Bride"
+                className="w-48 h-48 rounded-full object-cover mb-6 border-4 border-[#b27c33]" 
+              />
+            </div>
+            
             <p className="text-[18px] text-gray-800 whitespace-pre-line">
               {getPreview(brideStory)}
             </p>
